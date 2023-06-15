@@ -1,14 +1,19 @@
 import React from 'react';
 
-type ChildrenProps = {
-  children: React.ReactNode,
+/** Определение типа пропсов, передаваемых компоненту TabSwitcher */
+type Props = {
+  children: React.ReactNode;
+  /** Дети компонента являются узлами React */
   widthTabSwitcher: string,
+/** Дополнительный параметр определяет ширину компонента и является string. */
 };
 
-const TabSwitcher: React.FC<ChildrenProps> = ({ children, widthTabSwitcher }) => {
+/** Компонент TabSwitcher возвращает ненумерованный список с вложенными элементами children. 
+ * Принимает параметр widthTabSwitcher, который определяет ширину компонента */
+const TabSwitcher: React.FC<Props> = ({ children, widthTabSwitcher }) => {
   return (
     <ul 
-      className="headerTabSwitcher"
+      className="TabSwitcher"
       style={{width: `${widthTabSwitcher}`}}
     >
       {React.Children.map(children, (child) => {

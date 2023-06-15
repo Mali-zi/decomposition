@@ -1,5 +1,6 @@
 import RowList from './RowList';
 
+/** Компонент SiteFooter рендерит нижнюю часть сайта */
 export default function SiteFooter() {
   return (
     <footer>

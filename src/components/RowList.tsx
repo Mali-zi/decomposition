@@ -1,11 +1,16 @@
 import React from 'react';
 
-type ChildrenProps = {
+/** Определение типа пропсов, передаваемых компоненту RowList */
+type Props = {
   children: React.ReactNode;
+  /** Дети компонента являются узлами React */
   icons: React.ReactNode;
+/** Дополнительный параметр также являются узлами React. 
+ * В него передаюся иконки. */
 };
 
-const RowList: React.FC<ChildrenProps> = ({ children, icons }) => {
+/** Компонент RowList возвращает ненумерованный список с вложенными элементами children и icons*/
+const RowList: React.FC<Props> = ({ children, icons }) => {
   return (
     <ul className="RowList">
       {React.Children.map(children, (child) => {

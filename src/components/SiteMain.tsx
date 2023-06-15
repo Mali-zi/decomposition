@@ -1,5 +1,6 @@
 import TabSwitcher from './TabSwitcher';
 
+/** Компонент SiteMain рендерит основную часть сайта */
 export default function SiteMain() {
   return (
     <main>
