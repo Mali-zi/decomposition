@@ -16,7 +16,7 @@ ul {
 }
 
 p {
-  margin: 0;
+  margin: 7px 0 0 0;
 }
 
 h3 {
@@ -40,11 +40,7 @@ main, footer {
 }
 
 .RowList {
-  display: flex;
-  flex-direction: column;
   padding: 0;
-  width: 500px;
-
 }
 
 .Row {
@@ -57,12 +53,15 @@ main, footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
-  margin:5px 0 5px 0;
+  margin: 5px 0 5px 0;
 }
 
 .sectionTabSwitcher {
   height: auto;
+}
+
+.leftHeader {
+  width: 500px;
 }
 
 .rowLeftHeader {
@@ -87,8 +86,11 @@ main, footer {
   display: block;
   width: 670px;
   height: 40px;
+  border-style: solid;
   border-color: rgb(235, 221, 36);
   border-width: 2px;
+  outline: none;
+  box-shadow: none;
 }
 
 .searchButton {
@@ -96,7 +98,7 @@ main, footer {
   width: 100px;
   height: 40px;
   background-color: rgb(235, 221, 36);
-  border-width: 2px;
+  border: none;
   font-size: large;
 }
 
@@ -107,4 +109,19 @@ main, footer {
 
 .mainForm {
   text-align: start;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+  margin-left: 100px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
 }

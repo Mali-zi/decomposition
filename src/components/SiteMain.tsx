@@ -27,7 +27,7 @@ export default function SiteMain() {
       <form className='searchForm'>
         <label htmlFor='search'>
           <input type='search' id='search' className='inputPlace'></input>
-          Найдётся всё. Например, фаза луны сегодня
+          <p>Найдётся всё. Например, фаза луны сегодня</p>
         </label>
         <input type='button' value='Найти' className='searchButton'></input>
       </form>

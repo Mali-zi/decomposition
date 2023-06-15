@@ -2,16 +2,26 @@ import RowList from './RowList';
 
 export default function SiteFooter() {
   return (
-    <footer>
-      <div>
+    <footer className='SiteFooter'>
+      <RowList icons={<></>}>
         <h3>Погода</h3>
-        <div>
-          <img src='' alt=''></img>
+        <div className='weather'>
           <div>
-            Утром +17, днём +20
+            <img 
+              src={require('../img/weather.PNG')} 
+              alt={'weather'} 
+              style={{
+                height: '50px',
+                marginRight: '10px'
+              }}
+            />
+          </div>
+          <div>
+            Утром +17, 
+            <p>днём +20</p>
           </div>
         </div>
-      </div>
+      </RowList>
 
       <RowList icons={<></>}>
         <h3>Посещаемое</h3>
@@ -27,7 +37,7 @@ export default function SiteFooter() {
 
       <RowList icons={<></>}>
         <h3>Телепрограмма</h3>
-        <p>10:35 Лесник. "Охота", 1-я и 2-я серии</p>
+        <p>10:35 Лесник. "Охота", 1-я серия</p>
         <p>13:00 Сегодня</p>
         <p>14:00 Место встречи</p>
       </RowList>
