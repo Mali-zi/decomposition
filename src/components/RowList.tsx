@@ -1,13 +1,17 @@
-import { Children } from 'react';
+import React from 'react';
 
-export default function RowList({ children }: any) {
+type ChildrenProps = {
+  children: React.ReactNode;
+};
+
+const RowList: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <ul className="RowList">
-      {Children.map(children, child =>
-        <li className="Row">
-          {child}
-        </li>
-      )}
+      {React.Children.map(children, (child) => {
+        return <li className="Row">{child}</li>;
+      })}
     </ul>
   );
-}
+};
+
+export default RowList;

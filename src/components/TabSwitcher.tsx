@@ -1,14 +1,17 @@
-import { Children } from 'react';
+import React from 'react';
 
+type ChildrenProps = {
+  children: React.ReactNode;
+};
 
-export default function TabSwitcher({ children }: any) {
+const TabSwitcher: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <ul className="TabSwitcher">
-      {Children.map(children, child =>
-        <li className="sectionTabSwitcher">
-          {child}
-        </li>
-      )}
+      {React.Children.map(children, (child) => {
+        return <li className="sectionTabSwitcher">{child}</li>;
+      })}
     </ul>
   );
-}
+};
+
+export default TabSwitcher;
