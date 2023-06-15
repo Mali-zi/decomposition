@@ -30,12 +30,12 @@ h4 {
   margin: 0;
 }
 
-header {
-  margin-top: 40px;
+header, footer {
+  margin-top: 30px;
   padding-left: 100px;
 }
 
-main, footer {
+main {
   margin-top: 40px;
 }
 
@@ -111,12 +111,12 @@ main, footer {
   text-align: start;
 }
 
-footer {
+.SiteFooter {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 250px;
-  margin-left: 100px;
+  margin-top: 10px;
   align-items: flex-start;
   justify-content: flex-start;
 }

@@ -21,7 +21,7 @@ export default function SiteMain() {
         <h3>Маркет</h3>
         <h3>Переводчик</h3>
         <h3>Эфир</h3>
-        <h3>Ещё</h3>
+        <h3>ещё</h3>
       </TabSwitcher>
 
       <form className='searchForm'>
