@@ -12,18 +12,99 @@ body {
 
 ul {
   list-style: none;
-  padding-left: 20px;
+  padding-left: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  color: rgb(48, 124, 187);
+  font-size: large;
+  font-weight: 700;
+}
+
+h4 {
+  margin: 0;
+}
+
+header {
+  margin-top: 40px;
+  padding-left: 100px;
+}
+
+main, footer {
+  margin-top: 40px;
 }
 
 .RowList {
   display: flex;
   flex-direction: column;
-  border: 2px solid grey;
-  padding: 5px;
+  padding: 0;
+  width: 500px;
+
 }
 
 .Row {
-  border: 2px dashed black;
-  padding: 5px;
-  margin: 5px;
+  margin: 0;
+  height: inherit;
+}
+
+.headerTabSwitcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  margin:5px 0 5px 0;
+}
+
+.sectionTabSwitcher {
+  height: auto;
+}
+
+.rowLeftHeader {
+  margin: 2px 0;
+}
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputPlace {
+  display: block;
+  width: 670px;
+  height: 40px;
+  border-color: rgb(235, 221, 36);
+  border-width: 2px;
+}
+
+.searchButton {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(235, 221, 36);
+  border-width: 2px;
+  font-size: large;
+}
+
+.searchForm {
+  display: flex;
+  align-items:flex-start;
+}
+
+.mainForm {
+  text-align: start;
 }
